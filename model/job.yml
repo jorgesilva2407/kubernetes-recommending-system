@@ -14,6 +14,8 @@ spec:
             - mountPath: /mnt/data
               name: data-volume
           env:
+            - name: INPUT_FILE_LINK
+              value: https://raw.githubusercontent.com/jorgesilva2407/recommending-system/main/data/playlists.csv
             - name: INPUT_FILENAME
               value: /mnt/data/playlists.csv
             - name: OUTPUT_FILENAME
