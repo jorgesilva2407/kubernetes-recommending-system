@@ -16,7 +16,7 @@ spec:
       containers:
         - name: recommending-api
           image: silvajorge/recommending-api:1b9613a
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5000
           volumeMounts:
