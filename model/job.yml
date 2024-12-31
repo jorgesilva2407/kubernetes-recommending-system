@@ -8,7 +8,7 @@ spec:
     spec:
       containers:
         - name: recommending-model-job
-          image: silvajorge/recommending-model:80b3738
+          image: silvajorge/recommending-model:cfddac5
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - mountPath: /mnt/data
