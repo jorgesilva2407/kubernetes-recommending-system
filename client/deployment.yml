@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: recommending-client
-          image: silvajorge/recommending-client:444def2
+          image: silvajorge/recommending-client:468d539
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
