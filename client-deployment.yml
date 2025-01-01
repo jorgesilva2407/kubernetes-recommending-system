@@ -31,7 +31,7 @@ spec:
             - name: REACT_APP_RECOMMENDATION_API_URL
               value: "http://recommending-api:5000/api/recommend"
             - name: REACT_APP_SONGS_PATH
-              value: /songs.csv
+              value: https://raw.githubusercontent.com/jorgesilva2407/recommending-system/main/data/playlists.csv
             - name: CHOKIDAR_USEPOLLING
               value: "true"
             - name: NODE_OPTIONS
