@@ -19,7 +19,7 @@ spec:
           command: ["sh", "-c", "ulimit -n 65536"]
           resources:
             limits:
-              memory: "128Mi"
+              memory: "256Mi"
               cpu: "250m"
       containers:
         - name: recommending-client
@@ -34,3 +34,12 @@ spec:
               value: /songs.csv
             - name: CHOKIDAR_USEPOLLING
               value: "true"
+            - name: NODE_OPTIONS
+              value: "--max-old-space-size=4096"
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "500m"
+            limits:
+              memory: "4Gi"
+              cpu: "1"
