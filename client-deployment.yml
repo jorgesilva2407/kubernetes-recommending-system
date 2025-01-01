@@ -13,6 +13,14 @@ spec:
       labels:
         app: recommending-client
     spec:
+      initContainers:
+        - name: init-songs
+          image: busybox
+          command: ["sh", "-c", "ulimit -n 65536"]
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
       containers:
         - name: recommending-client
           image: silvajorge/recommending-client:468d539
