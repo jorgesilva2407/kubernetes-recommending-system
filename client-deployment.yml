@@ -24,3 +24,5 @@ spec:
               value: "http://recommending-api:5000/api/recommend"
             - name: REACT_APP_SONGS_PATH
               value: /songs.csv
+            - name: CHOKIDAR_USEPOLLING
+              value: "true"
