@@ -9,6 +9,4 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  selector:
-    matchLabels:
-      namespace: jorgesilva
+  storageClassName: default-storage-class-jorgesilvass
