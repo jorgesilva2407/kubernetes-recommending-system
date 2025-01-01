@@ -23,7 +23,7 @@ spec:
               cpu: "250m"
       containers:
         - name: recommending-client
-          image: silvajorge/recommending-client:fb928f6
+          image: silvajorge/recommending-client:7600011
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
