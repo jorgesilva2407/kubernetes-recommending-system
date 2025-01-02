@@ -7,8 +7,8 @@ spec:
   template:
     spec:
       containers:
-        - name: recommending-model-job-684a9ad
-          image: silvajorge/recommending-model:684a9ad
+        - name: recommending-model-job-5b0e4e0
+          image: silvajorge/recommending-model:5b0e4e0
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - mountPath: /mnt/data
