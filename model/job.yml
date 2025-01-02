@@ -7,7 +7,7 @@ spec:
   template:
     spec:
       containers:
-        - name: recommending-model-706da6a
+        - name: recommending-model-job-706da6a
           image: silvajorge/recommending-model:706da6a
           imagePullPolicy: IfNotPresent
           volumeMounts:
