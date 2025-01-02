@@ -1,14 +1,14 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: recommending-model-e5737d9
+  name: recommending-model-393a6b8
   namespace: jorgesilva
 spec:
   template:
     spec:
       containers:
-        - name: recommending-model-e5737d9
-          image: silvajorge/recommending-model:e5737d9
+        - name: recommending-model-393a6b8
+          image: silvajorge/recommending-model:393a6b8
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - mountPath: /mnt/data
