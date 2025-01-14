@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         app: recommending-api
-        version: v1.0.2
+        version: v1.0.3
     spec:
       containers:
         - name: recommending-api
